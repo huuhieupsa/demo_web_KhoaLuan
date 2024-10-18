@@ -21,16 +21,14 @@ body {
 }
 
 .form_input {
-    display: inline-block;
-    position: absolute;
-    margin-top: 50px;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#input_url {
-    width: 450px;
+#url_post {
+    width: 1000px;
     height: 30px;
     padding: 5px 10px;
     font-size: 13px;
@@ -45,4 +43,35 @@ body {
     background: rgb(87, 87, 248);
     color: aliceblue;
     cursor: pointer;
+}
+
+.view_post {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.predict_result.Fake {
+    background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.predict_result.True {
+    background-color: #27ae60;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
 }
